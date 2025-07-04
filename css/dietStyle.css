@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+* { 
+  padding: 0; margin: 0; box-sizing: border-box; 
+}
+
+li { 
+  list-style: none; 
+}
+
+a { 
+  text-decoration: none; color: inherit; 
+}
+
+img { 
+  vertical-align: top; max-width: 100%; 
+}
+
+button { cursor: pointer; }
+
+body { 
+  font-family: Arial, sans-serif; background: #f4f4f4; color: #333; 
+}
+
+/*----------------------------------------------------------------------------*/
+
+.contents { 
+  background: #ffe3e9; position: relative; height: 700px; overflow: hidden; 
+}
+
+header { 
+  height: 100px; width: 100%; background: #deefff; align-items: center; position: relative; display: flex; 
+}
+
+header .inner { 
+  width: 90%; height: 100px; margin: auto; 
+}
+
+header h2 { 
+  padding: 17px 50px; 
+}
+
+nav { 
+  position: absolute; top: 60px; right: 5%; text-align: center;
+}
+
+.main { display: flex; }
+
+.main > li:first-child > a { 
+  border-radius: 10px 0 0 0;
+}
+
+.main > li > a { 
+  display: block; width: 130px; height: 40px; padding: 5px; 
+  background: #ff93d6; color: #fff; padding-top: 7px;
+}
+
+.main > li:hover > a { 
+  background: #4baeff; color: #fff;
+}
+
+.main > li:last-child > a { 
+  border-radius: 0px 10px 0px 0px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.bu { 
+  position: absolute; right: 20px; margin-top: 30px; margin-right: 20px;
+}
+
+.bu > button { 
+  border-radius: 10px; border: 1px solid #333;
+  width: 110px; height: 40px; background: #ffffff;
+}
+
+.bu > button:hover { 
+  background: #e6e5e5;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.ten { 
+  position: absolute; right: 20px; bottom: 20px; 
+}
+
+.ten > button { 
+  width: 45px; height: 45px; 
+}
+
+/*----------------------------------------------------------------------------*/
+
+header > h2 > a > img { 
+  position: absolute; top: 15px; width: 80px; height: 80px; 
+}
+
+.container {
+  position: absolute; top:  50%; left: 50%; transform: translate(-50%, -50%);
+  display: none; max-width: 600px; margin: auto; background: #fff; 
+  padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+header > h1 { 
+  position: absolute; left: 75px; top: 50px; text-align: center; margin-bottom: 20px; 
+}
+
+input, button, select { 
+  width: 100%; padding: 10px; margin: 5px 0; 
+}
+
+.meal-list { margin-top: 20px; }
+
+.meal-item { 
+  padding: 10px; border-bottom: 1px solid #ddd; 
+}
+
+.total { 
+  margin-top: 15px; font-weight: bold; text-align: right; 
+}
+
+.chart-area { 
+  padding: 10px; position: fixed;
+  display: none; margin-top: 0px; position: absolute; top: 50%; left: 145%; 
+  transform: translate(-50%,-50%); background: #c5e0ffc4; width: 500px; height: 300px; border-radius: 20px; 
+}
+
+.chart-area button { 
+  margin-bottom: 10px; 
+}
+
+footer { 
+  height: 100px; background: #949494; display: flex; align-items: center; position: relative; 
+}
+
+footer > p { 
+  position: absolute; left: 50%; top: 50%; text-align: center; transform: translate(-50%,-50%); font-weight: bold; 
+}
+
+footer > ul { 
+  position: absolute; right: 20px; display: flex; padding: 10px; gap: 10px; 
+}
+
+footer > ul > li > a > img { 
+  width: 30px; height: 30px; 
+}

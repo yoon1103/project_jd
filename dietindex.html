@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>식단 관리</title>
+  <link rel="stylesheet" href="css/dietStyle.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/jquery-1.12.3.js"></script>
+  <script defer src="js/dietscript.js"></script>
+</head>
+<body>
+    <header>
+      <div class="inner">
+        <h2><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/mainindex.html"><img src="imgs/logo.png" alt="weh"></a></h2>
+      <!--<h1><a href="#">식단 관리 페이지</a></h1>-->
+      <nav>
+        <ul class="main">
+          <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/exerciseindex.html">🏋️ 운동 관리</a></li>
+          <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/dietindex.html">🍎 식단 관리</a></li>
+          <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/healthindex.html">📊 건강 관리</a></li>
+          <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/bulletinindex.html">📝 게시판</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+  <div class="contents">
+    <div class="bu">
+      <button class="goat">식단 관리하기</button><br>
+      <button onclick="toggleChart()">그래프 보기</button>
+    </div>
+    <div class="container">
+
+      <input list="foods" type="text" id="meal" placeholder="음식 이름 (예: 닭가슴살)" />
+      <datalist id="foods">
+        <option value="닭가슴살">
+        <option value="고구마">
+        <option value="바나나">
+        <option value="계란">
+        <option value="두부">
+        <option value="밥">
+        <option value="아보카도">
+      </datalist>
+  
+      <input type="number" id="weight" placeholder="먹은 무게 (g, 선택)" />
+      <input type="number" id="calories" placeholder="직접 입력시 칼로리 (예: 250)" />
+      <button onclick="addMeal()">추가</button>
+  
+      <div class="meal-list" id="mealList"></div>
+      <div class="total" id="totalCalories">총 칼로리: 0 kcal</div>
+      <div class="total" id="totalMacros">단백질: 0g, 탄수화물: 0g, 지방: 0g</div>
+  
+      <div class="chart-area" id="chartArea">
+        <canvas id="nutritionChart" width="400" height="200"></canvas>
+      </div>
+    </div>
+    <div class="ten">
+        <button class="up"><img src="imgs/down.png" alt="아래로"></button>
+        <button class="down"><img src="imgs/up.png" alt="위로"></button>
+    </div>
+  </div>
+  <footer>
+    <p><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/mainindex.html">COPYRIGHT © by WEB DESIGN DEVELOPMENT. ALL RIGHTS RESERVED.</a></p>
+    <ul>
+        <li><a href="#"><img src="imgs/sns1.jpg" alt="facebook"></a></li>
+        <li><a href="#"><img src="imgs/sns2.jpg" alt="twitter"></a></li>
+        <li><a href="#"><img src="imgs/sns3.jpg" alt="instagram"></a></li>
+    </ul>
+</footer>
+</body>
+</html>

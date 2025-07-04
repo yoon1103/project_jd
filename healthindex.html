@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건강관리 홈페이지</title>
+    <link rel="stylesheet" href="css/healthStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/healthscript.js"></script>
+</head>
+<body>
+    <div class="warp">
+        <header>
+            <div class="inner">
+                <h2><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/mainindex.html"><img src="imgs/logo.png" alt="건강관리 홈페이지"></a></h2>
+            </div>
+        </header>
+        <div class="maps">
+            <div class="inner">
+                <div class="bmi-test">
+                    <h3 class="bmi-test-text">
+                        <br>나의 체질량지수(BML) 계산하기<br>
+                        <span>나의 신장과 체중을 입력하고 계산하기 버튼을 클릭하여 결과를 확인 하세요.<br><br></span>
+                    </h3>
+                    <label class="height">신장(cm)<br> <input class="height" type="number" id="height" placeholder="예: 170" /></label><br />
+                    <label class="weight">체중(kg)<br> <input type="number" id="weight" placeholder="예: 65" /></label><br /><br>
+                    <button id="checkBtn" class="checkBtn">계산하기</button>
+                    <div id="resultBox"></div>
+                    
+                    <div class="bmi-bar">
+                        <div class="bmi-stage under">저체중</div>
+                        <div class="bmi-stage normal">정상</div>
+                        <div class="bmi-stage pre-obese">비만전단계</div>
+                        <div class="bmi-stage obese1">1단계 비만</div>
+                        <div class="bmi-stage obese2">2단계 비만</div>
+                        <div class="bmi-stage obese3">3단계 비만</div>
+                        <div class="bmi-pointer" id="bmiPointer">▼</div>
+                    </div>
+                    <p class="bmi-detail"><button>BML 자세히 알아보기</button></p>
+                </div>
+                <article class="dfgd">
+                    <div class="health-graph-placeholder">
+                        <div class="graph">
+                            <canvas id="bmiChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                        <!-- 그래프 자리 (비워둠) -->
+                </article>
+            </div>
+        </div>
+        <footer>
+            <div class="inner">
+                <h2><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/mainindex.html"><img src="imgs/flogo.png" alt="건강관리 홈페이지"></a></h2>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

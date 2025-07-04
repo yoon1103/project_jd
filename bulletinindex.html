@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>게시판</title>
+
+  <!-- ① 외부 스타일시트 -->
+  <link rel="stylesheet" href="css/bulletinstyle.css" />
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/bulletinscript.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="inner">
+        <h2 class="da1"><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/mainindex.html"><img src="imgs/logo.png" alt="setj"></a></h2>
+        <!--<h1 class="da1"><a href="#">게시판</a></h1>-->
+        <!-- 네비게이션 -->
+        <nav>
+          <ul class="main">
+            <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/exerciseindex.html">🏋️ 운동 관리</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/dietindex.html">🍎 식단 관리</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/healthindex.html">📊 건강 관리</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/bulletinindex.html">📝 게시판</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="dad">글쓰기</button>
+    </header>
+    
+    <div class="contents">
+      <!-- 스크롤 버튼 -->
+      <div class="updown">
+        <button class="up"><img src="imgs/down.png" alt="아래로"></button>
+        <button class="down"><img src="imgs/up.png" alt="위로"></button>
+      </div>
+
+      <!-- 글쓰기 팝업 -->
+      <div class="popup">
+        <main>
+          <div class="input-area">
+            <div class="qwer">
+              <input type="text" id="title" placeholder="제목 입력" />
+              <textarea id="content" placeholder="내용 입력"></textarea>
+            </div>
+            <button id="write">추가</button>
+          </div>
+
+          <!-- ▲ loadPosts() 가 이곳에 .post 요소를 동적으로 넣음 -->
+          <div id="post-list"></div>
+        </main>
+      </div>
+
+      <button class="delete-btn" style="display:none;">삭제</button>
+    </div>
+
+    <footer>
+      <p><a href="#">COPYRIGHT © by WEB DESIGN DEVELOPMENT. ALL RIGHTS RESERVED.</a></p>
+      <ul>
+        <li><a href="#"><img src="imgs/sns1.jpg" alt="facebook"></a></li>
+        <li><a href="#"><img src="imgs/sns2.jpg" alt="twitter"></a></li>
+        <li><a href="#"><img src="imgs/sns3.jpg" alt="instagram"></a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>

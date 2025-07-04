@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: top; max-width: 100%;}
+button{cursor: pointer;}
+body{background: #fff; color: #333;}
+
+.warp{
+    width: 100%; height: 900px; position: relative;
+}
+
+/*--------------------------------------------------------------------*/
+
+header{
+    width: 100%; height: 120px; background: #72b7df; padding: 10px;
+    position: relative;
+}
+
+header .inner{
+    width: 90%; height: 100%; padding: 10px; margin: auto; 
+    background: none; position: relative;
+}
+
+header .inner h2{
+    padding: 7px 0;
+}
+
+/*--------------------------------------------------------------------*/
+
+.maps{
+    width: 100%; height: 660px;
+}
+
+.maps .inner{
+    width: 1300px; height: 100%; margin: auto; display: flex;
+}
+
+/*----------------------------------------------*/
+
+.bmi-test{
+    width: 650px; height: 100%; background: #feffd3; padding: 30px;
+}
+  
+.bmi-test input {
+    width: 100px;
+    margin: 5px;
+}
+  
+#resultBox {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.bmi-bar {
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.bmi-bar .bmi-pointer{
+    display: none;
+}
+  
+.bmi-stage {
+    flex: 1;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+}
+  
+.under       { background: #2196f3; }  /* 저체중 */
+.normal      { background: #4caf50; }  /* 정상 */
+.pre-obese   { background: #cddc39; }  /* 비만전단계 */
+.obese1      { background: #ff5722; }  /* 1단계 비만 */
+.obese2      { background: #9c27b0; }  /* 2단계 비만 */
+.obese3      { background: #3f51b5; }  /* 3단계 비만 */
+  
+.bmi-pointer {
+    position: absolute;
+    top: -20px;
+    font-size: 18px;
+    color: black;
+    transition: left 0.3s;
+}
+
+.bmi-test-text{
+    font-size: 30px;
+}
+
+.bmi-test-text span{
+    font-size: 18px; color: #8a8a8a; font-weight: normal;
+}
+
+.height input{
+    width: 100%; height: 35px;
+}
+
+.weight input{
+    width: 100%; height: 35px;
+}
+
+.checkBtn{
+    width: 150px; height: 35px; margin-left: 38%; border: none;
+    background: #72b7df; color: #fff; border-radius: 10px;
+}
+
+.checkBtn:hover{
+    background: #2b566e; color: #fff;
+}
+
+.bmi-detail{
+    margin-top: 3px;
+}
+
+.bmi-detail button{
+    font-size: 8px; border-radius: 3px; border: none; background: #72b7df;
+    padding: 3px; color: #fff;
+}
+
+.bmi-detail button:hover{
+    background: #2b566e; color: #fff;
+}
+  
+
+/*----------------------------------------------*/
+
+.dfgd {
+    width: 650px;
+    height: 100%;
+    background: #cad6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.health-graph-placeholder {
+    width: 90%;
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #3f51b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.graph .bmiChart{
+    background: #157369;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+
+footer{
+    width: 100%; height: 120px; background: #949494; padding: 10px;
+}
+
+footer .inner{
+    width: 90%; height: 100%; padding: 10px;
+}
+
+footer .inner h2{
+    padding: 7px 0px;
+}

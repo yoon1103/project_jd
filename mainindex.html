@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인화면</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/mainscript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="warp">
+        <header>
+            <div class="inner">
+                <h2><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/mainindex.html"><img src="imgs/logo.png" alt="건강관리 홈페이지"></a></h2>
+                <p class="spot">
+                    <a href="#" class="login">로그인</a>
+                    <a href="#" class="membership">회원가입</a>
+                </p>
+            </div>
+        </header>
+        <div class="maps">
+            <div class="submap">
+                <ul>
+                    <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/exerciseindex.html">운동관리</a></li>
+                    <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/dietindex.html">식단관리</a></li>
+                    <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/healthindex.html">건강지표</a></li>
+                    <li><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/bulletinindex.html">게시판</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <section class="slide">
+                    <ul>
+                        <li class="s1"><a href="#"><h2></h2></a></li>
+                        <li class="s2"><a href="#"><h2></h2></a></li>
+                        <li class="s3"><a href="#"><h2></h2></a></li>
+                    </ul>
+                </section>
+                <form class="searchForm" id="searchForm">
+                    <h3>검색창</h3>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search-suggestions"></div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="inner">
+                <h2><a href="file:///C:/Users/User/Desktop/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%A9%EC%B2%B4%EB%B3%B8/mainindex.html"><img src="imgs/flogo.png" alt="건강관리 홈페이지"></a></h2>
+            </div>
+        </footer>
+        <!--로그인/회원가입-->
+        <div class="popupL">
+            <div class="popconL">
+                <h2><a href="#">로그인 페이지</a></h2>
+                <form class="loginForm">
+                    <label for="userid">아이디</label>
+                    <input type="text" id="userid" name="userid" placeholder="아이디를 입력하세요">
+                    
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요">
+                    
+                    <button type="submit" class="loginBtn">로그인</button>
+                </form>
+                <p class="close"><button>나가기</button></p>
+            </div>
+        </div>
+        <div class="popupN">
+            <div class="popconN">
+                <h2><a href="#">회원가입 페이지</a></h2>
+                <form class="signupFormN">
+                    <label for="username">아이디</label>
+                    <input type="text" id="username" name="username" placeholder="아이디를 입력하세요">
+              
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요">
+              
+                    <label for="confirm">비밀번호 확인</label>
+                    <input type="password" id="confirm" name="confirm" placeholder="비밀번호를 다시 입력하세요">
+              
+                    <button type="submit" class="signupBtnN">회원가입</button>
+                </form>
+                <p class="close"><button>나가기</button></p>
+            </div>
+        </div>
+        <!--검색창-->
+    </div>
+</body>
+</html>
